@@ -1,0 +1,2 @@
+# WAD-Assignment
+TE practicals
