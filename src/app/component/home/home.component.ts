@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,10 +10,21 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  constructor() {}
+  user: { email: string; password: string } = { email: '', password: '' };
+
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    // Retrieve user details from localStorage
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      this.user = JSON.parse(storedUser);
+    }
+  }
 
   logout() {
     localStorage.removeItem('isLoggedIn');
-    alert('Logged Out');
+    this.router.navigate(['/login']);
   }
 }
+
