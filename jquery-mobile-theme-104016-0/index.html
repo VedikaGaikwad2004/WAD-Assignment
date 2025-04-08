@@ -1,0 +1,72 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="themes/themeJQ.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	
+	  <div data-role="page" id="home" data-theme="a">
+		<div data-role="header">
+			<h1>Welcome to jQuery Mobile</h1>
+		</div>
+		<div data-role="popup" id="popup1">
+			<p>This is a popup!</p>
+		  </div>
+		  <a href="#popup1" data-rel="popup" data-role="button">Open Popup</a>
+
+
+		 
+		   
+		  
+		<div data-role="content">
+			<p>This is a simple jQuery Mobile page.</p>
+			<p>✅ What is jQuery Mobile?
+				jQuery Mobile is a UI framework built on top of jQuery, optimized for mobile devices.
+				
+				It provides:
+				
+				Touch-friendly components
+				
+				Responsive layouts
+				
+				Smooth page transitions
+				
+				Easy navigation between pages in a single HTML file
+				
+				</p>
+				<img src="jquery.jpg">
+				<img src="themeroller_1.png">
+			<a href="#page2" data-role="button" data-transition="fade">Go to Page 2</a>
+		</div>
+	</div>
+	
+	<div data-role="page" id="page2" data-theme="b">
+		<div data-role="header">
+			<h1>Page 2</h1>
+		</div>
+		<div data-role="content">
+			<p>This is Page 2.</p>
+			<a href="#" data-role="button">Click me</a>
+        <div data-role="collapsible">
+               <h3>Collapsible Content</h3>
+                <p>This is the collapsible content.</p>
+				<img src="jq.jpg">
+       </div>
+
+			<a href="#home" data-role="button" data-transition="slide">Back to Home</a>
+		</div>
+	</div>
+
+
+	</div>
+</body>
+
+</html>
