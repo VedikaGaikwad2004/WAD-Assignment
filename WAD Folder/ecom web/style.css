@@ -1,0 +1,41 @@
+body {
+    font-size: .875rem;
+  }
+  
+  .bg-container {
+    background-image: url("https://via.placeholder.com/1920x1080");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 20px;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .card-header {
+    font-size: 1.25rem;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+  

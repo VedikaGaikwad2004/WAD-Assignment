@@ -1,0 +1,12 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('/welcome.jpg'); /* ✅ Make sure the path is correct */
+    background-size: cover;   /* ✅ Covers the entire screen */
+    background-position: center; /* ✅ Centers the image */
+    background-repeat: no-repeat; /* ✅ Prevents repetition */
+}
